@@ -10,14 +10,14 @@ import Footer from "./components/Footer.jsx";
 
 export default function App() {
   return (
-    <div className="bg-[var(--color-almond)] text-[var(--color-raisin)] font-sans">
+    <div className="min-h-screen bg-[var(--color-almond)] text-[var(--color-raisin)]">
       <Header />
       <main>
         <Hero />
         <Services />
         <Projects />
         <Contact /> 
-        <CTA />
+        
       </main>
       <Footer />
     </div>

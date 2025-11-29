@@ -3,12 +3,14 @@ export default function Hero() {
 <section
   id="inicio"
   className="relative h-[90vh] flex items-center justify-center bg-cover bg-center"
-  style={{ backgroundImage: "url('https://i.imgur.com/9vQhf1C.jpeg')" }}
+  style={{ backgroundImage: "url('https://i.imgur.com/CnZRvJ3.jpeg')" }}
 >
-  <div className="absolute inset-0 bg-black/40"></div>
+    {/* Capa oscura suave */}
+  <div className="absolute inset-0 bg-black/30" />
 
-  <div className="relative z-10 text-center text-white px-6 max-w-3xl">
-    <h1 className="font-serif text-5xl md:text-6xl mb-4">
+  
+  <div className="relative z-10 text-center text-white px-6">
+    <h1 className="font-sans font-light text-6xl md:text-7xl tracking-tight">
       Arquitecta Pescara
     </h1>
 
@@ -19,8 +21,7 @@ export default function Hero() {
     <div className="flex gap-4 justify-center">
       <a
         href="#proyectos"
-        className="bg-white text-black px-6 py-3 rounded-md font-semibold hover:brightness-110 transition"
-      >
+        className="bg-white text-black px-6 py-3 rounded-md font-semibold hover:brightness-110 transition">
         Ver proyectos
       </a>
 
