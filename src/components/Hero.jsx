@@ -2,7 +2,7 @@ export default function Hero() {
   return (
 <section
   id="inicio"
-  className="relative h-[90vh] flex items-center justify-center bg-cover bg-center"
+  className="relative h-[100vh] flex items-center justify-center bg-cover bg-center"
   style={{ backgroundImage: "url('https://i.imgur.com/CnZRvJ3.jpeg')" }}
 >
     {/* Capa oscura suave */}
@@ -15,7 +15,7 @@ export default function Hero() {
     </h1>
 
     <p className="text-lg md:text-xl mb-8 opacity-90">
-      Espacios que inspiran, arquitectura con propósito.
+      Única y sensible
     </p>
 
     <div className="flex gap-4 justify-center">

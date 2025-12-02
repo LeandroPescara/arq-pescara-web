@@ -111,7 +111,9 @@ export default function Header() {
             alt="Arquitecta Pescara"
             className="h-12 w-auto object-contain transition-all duration-300"
           />
-          <span className="text-sm font-medium tracking-wide">
+
+          {/* 👇 ÚNICO CAMBIO: ocultar texto en mobile */}
+          <span className="text-sm font-medium tracking-wide hidden md:inline">
             Arquitecta Pescara
           </span>
         </a>
@@ -146,9 +148,9 @@ export default function Header() {
                     ${open ? "pointer-events-auto" : "pointer-events-none"}`}
         aria-hidden={!open}
       >
-        {/* Fondo */}
+        {/* Fondo */} 
         <div
-          className={`absolute inset-0 bg-black/40 transition-opacity
+          className={` absolute inset-0 bg-black/20 transition-opacity
                       ${open ? "opacity-100" : "opacity-0"}`}
           onClick={() => setOpen(false)}
         />
@@ -159,7 +161,7 @@ export default function Header() {
           role="dialog"
           aria-modal="true"
           className={`absolute top-0 right-0 h-full w-[78%] max-w-xs
-                      bg-[var(--color-almond)] text-[var(--color-raisin)]
+                      bg-white text-[var(--color-raisin)]
                       border-l border-black/10 shadow-xl
                       transition-transform duration-300
                       ${open ? "translate-x-0" : "translate-x-full"}`}
